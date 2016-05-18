@@ -1,0 +1,29 @@
+channel						21			// sets channel. valid channels are from 11 to 21  (decimal) 
+pan_id						0xAACC		// sets the PANID. valid address are from 0x0000 to 0xFFFD (Hex) (0xFFFF is global address) 
+short_address				0xAA55		// sets the 16bit short address of node. valid address are from 0x0000 to 0xFFFD (Hex) (0xFFFF is global address)
+extended_address[3]			0xfe80
+extended_address[2]			0x0000
+extended_address[1]			0x0000
+extended_address[0]			0xAA55
+pan_coord	 				true
+coord						true
+auto_acknowledge			true  
+symbol_tick_period			16
+power_amplifier_enabled		false
+reset_pin					25
+interrupt_pin				24
+interrupt_edge				rising
+
+
+cca_mode					energy_detect	// energy_detect   carrier_sense    both
+cca_energy_threshold		0x60
+cca_carrier_threshold		0x0E
+macMaxCSMABackoff			0x04
+macMinBE					0x03
+append_rssi					true
+
+
+
+battery_monitor_enable = true;
+battery_voltage_low_threshold =  2.8
+battert_life_extend = false
